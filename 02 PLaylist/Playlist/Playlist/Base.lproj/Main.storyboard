@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="9NB-nt-T1h">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--The Beatles-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PlaylistViewController" customModule="Playlist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="collage" translatesAutoresizingMaskIntoConstraints="NO" id="uBd-qe-JnG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CSt-9k-kWG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="rxX-fu-c5r">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Some albums from 1960 to 1970" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKO-Af-vLF">
+                                            <rect key="frame" x="32" y="87" width="257" height="21"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ADh-vx-eWY">
+                                            <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="6Qd-7w-WYJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLX-rH-sOA">
+                                                        <rect key="frame" x="-867" y="-907" width="2054" height="1857"/>
+                                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="My Favs" image="Favourites"/>
+                                                    </button>
+                                                </subviews>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0vG-FI-PON">
+                                            <rect key="frame" x="11" y="116" width="298" height="400"/>
+                                            <subviews>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BhT-HK-MFG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="NMS-d7-m7x" appends="YES" id="ink-yx-x0b"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2c7-I0-Ib1">
+                                                    <rect key="frame" x="102" y="0.0" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="IxL-eN-akR" appends="YES" id="vzf-61-fk6"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FMh-rr-luY">
+                                                    <rect key="frame" x="204" y="204" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="ZXj-wH-16u" appends="YES" id="y3F-NU-QCY"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aMc-mg-sxw">
+                                                    <rect key="frame" x="0.0" y="306" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="0QK-yo-X5S" appends="YES" id="JAn-3V-jr1"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O5e-uL-Nfn">
+                                                    <rect key="frame" x="102" y="306" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="aKI-5S-Rfr" appends="YES" id="n8Q-pQ-FNx"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZMm-XO-UVW">
+                                                    <rect key="frame" x="204" y="306" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="ILb-cz-3xi" appends="YES" id="JNh-De-End"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jv3-M0-pc3">
+                                                    <rect key="frame" x="204" y="0.0" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="sjD-Du-J3f" appends="YES" id="psr-xr-ss7"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNU-nk-yWV">
+                                                    <rect key="frame" x="0.0" y="102" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="8K1-8c-VBg" appends="YES" id="PnV-gx-O6s"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3yk-1F-YJS">
+                                                    <rect key="frame" x="102" y="102" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="KhA-NI-o7J" appends="YES" id="oL4-QO-T83"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q8a-jm-Uiy">
+                                                    <rect key="frame" x="204" y="102" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="B98-Ue-Bgd" appends="YES" id="diA-dg-Zc8"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CWZ-CZ-e0a">
+                                                    <rect key="frame" x="0.0" y="204" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="7bq-bN-eCL" appends="YES" id="0Yh-48-pnH"/>
+                                                    </connections>
+                                                </imageView>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XZS-Xe-y5d">
+                                                    <rect key="frame" x="102" y="204" width="94" height="94"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="rBl-qB-QAc" appends="YES" id="dep-Dc-jla"/>
+                                                    </connections>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Beatles" id="TUR-Nt-biy"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="coverImage0" destination="BhT-HK-MFG" id="JAl-rK-2eP"/>
+                        <outlet property="coverImage1" destination="2c7-I0-Ib1" id="RkB-zE-CeF"/>
+                        <outlet property="coverImage10" destination="O5e-uL-Nfn" id="CRT-Ex-lqc"/>
+                        <outlet property="coverImage11" destination="ZMm-XO-UVW" id="Z4N-I9-FrW"/>
+                        <outlet property="coverImage2" destination="jv3-M0-pc3" id="bQS-gX-teF"/>
+                        <outlet property="coverImage3" destination="bNU-nk-yWV" id="3GY-pO-9BA"/>
+                        <outlet property="coverImage4" destination="3yk-1F-YJS" id="pbO-bt-ciP"/>
+                        <outlet property="coverImage5" destination="Q8a-jm-Uiy" id="bfg-LK-wWc"/>
+                        <outlet property="coverImage6" destination="CWZ-CZ-e0a" id="Waj-sg-fzc"/>
+                        <outlet property="coverImage7" destination="XZS-Xe-y5d" id="F52-GB-CDg"/>
+                        <outlet property="coverImage8" destination="FMh-rr-luY" id="htT-k5-EGC"/>
+                        <outlet property="coverImage9" destination="aMc-mg-sxw" id="KBT-O0-uLy"/>
+                        <segue destination="DiN-jC-KSD" kind="push" identifier="showAlbum" id="maG-nN-Yv2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="NMS-d7-m7x">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="R4z-fx-BOv"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="IxL-eN-akR">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="biw-q0-KEZ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="sjD-Du-J3f">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="khG-ZM-vr2"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="8K1-8c-VBg">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="XC4-wM-qUM"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="KhA-NI-o7J">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="fC8-kb-adf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="B98-Ue-Bgd">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="xWo-y8-mlF"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="7bq-bN-eCL">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="wCf-dr-2bO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="rBl-qB-QAc">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="jFu-T8-Iyb"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ZXj-wH-16u">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="tGx-VX-tgj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="0QK-yo-X5S">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="W8n-Uz-Tuy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="aKI-5S-Rfr">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="7PH-Cw-Xt3"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ILb-cz-3xi">
+                    <connections>
+                        <action selector="showAlbum:" destination="BYZ-38-t0r" id="ZPX-iB-QdN"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="662" y="329"/>
+        </scene>
+        <!--Album View Controller-->
+        <scene sceneID="sVw-Pu-qJS">
+            <objects>
+                <viewController id="DiN-jC-KSD" customClass="AlbumViewController" customModule="Playlist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Om-jo-r7U"/>
+                        <viewControllerLayoutGuide type="bottom" id="WQP-4T-J0r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="89q-Ae-PYp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="A Hard Day's Night" translatesAutoresizingMaskIntoConstraints="NO" id="pKG-v2-iX8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="egc-v3-n6o">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="PUx-iS-YOz">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OLK-6a-cqs">
+                                            <rect key="frame" x="0.0" y="64" width="320" height="320"/>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Lvl-KA-aF6">
+                                            <rect key="frame" x="8" y="392" width="304" height="168"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DCN-Pb-xqV"/>
+                    <connections>
+                        <outlet property="albumCoverImageView" destination="OLK-6a-cqs" id="t2Y-qu-XP4"/>
+                        <outlet property="backgroundImageView" destination="pKG-v2-iX8" id="E3z-DI-1eN"/>
+                        <outlet property="descriptionTextView" destination="Lvl-KA-aF6" id="Au7-RK-xtH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ji8-S8-AUB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="329"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kly-CB-NzC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9NB-nt-T1h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2vo-Wa-knq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LFN-oV-OE2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ezj-7W-JaC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="A Hard Day's Night" width="1636" height="1482"/>
+        <image name="Favourites" width="28" height="26"/>
+        <image name="collage" width="640" height="1136"/>
+    </resources>
+</document>
