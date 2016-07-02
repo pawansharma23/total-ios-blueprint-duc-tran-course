@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Constrains" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zuo-w6-5h4">
+                                <rect key="frame" x="159" y="46" width="421" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpd-Z3-DIb">
+                                <rect key="frame" x="20" y="50" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="91L-BK-SHi">
+                                <rect key="frame" x="159" y="96" width="421" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOn-FU-6uX">
+                                <rect key="frame" x="22" y="100" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe to Styde.net" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNK-1U-tan">
+                                <rect key="frame" x="213" y="164" width="175" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="91L-BK-SHi" secondAttribute="trailing" id="1oi-8G-WTc"/>
+                            <constraint firstItem="GNK-1U-tan" firstAttribute="top" secondItem="91L-BK-SHi" secondAttribute="bottom" constant="38" id="2TN-9q-sao"/>
+                            <constraint firstItem="dOn-FU-6uX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="BYj-h3-qB3"/>
+                            <constraint firstItem="dOn-FU-6uX" firstAttribute="top" secondItem="Cpd-Z3-DIb" secondAttribute="bottom" constant="29" id="D38-aU-ySn"/>
+                            <constraint firstItem="Cpd-Z3-DIb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="GZU-LE-6lP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zuo-w6-5h4" secondAttribute="trailing" id="GfG-2m-ucz"/>
+                            <constraint firstItem="91L-BK-SHi" firstAttribute="top" secondItem="zuo-w6-5h4" secondAttribute="bottom" constant="20" id="LhP-ri-yiI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Cpd-Z3-DIb" secondAttribute="leading" id="M7P-Vw-mO7"/>
+                            <constraint firstItem="zuo-w6-5h4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="SZI-Yd-FaJ"/>
+                            <constraint firstItem="zuo-w6-5h4" firstAttribute="leading" secondItem="Cpd-Z3-DIb" secondAttribute="trailing" constant="60" id="Vaf-iP-W4K"/>
+                            <constraint firstItem="91L-BK-SHi" firstAttribute="leading" secondItem="dOn-FU-6uX" secondAttribute="trailing" constant="63" id="c6u-VC-xHJ"/>
+                            <constraint firstItem="GNK-1U-tan" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wTC-dS-v7g"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="348"/>
+        </scene>
+    </scenes>
+</document>
