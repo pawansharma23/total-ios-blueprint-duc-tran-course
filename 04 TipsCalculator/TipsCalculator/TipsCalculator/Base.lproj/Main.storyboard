@@ -59,6 +59,9 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="2YV-Lk-18C">
                                 <rect key="frame" x="119" y="319" width="238" height="31"/>
+                                <connections>
+                                    <action selector="splitSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Fym-PE-YTb"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$$$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQj-U4-cwP">
                                 <rect key="frame" x="20" y="253" width="335" height="40"/>
@@ -83,6 +86,7 @@
                         <outlet property="numberOfPeopleLabel" destination="dyr-ev-cpm" id="WF0-H4-v7l"/>
                         <outlet property="numberOfPeopleSlider" destination="2YV-Lk-18C" id="zx0-ly-1pX"/>
                         <outlet property="resultLabel" destination="YQj-U4-cwP" id="LIO-u2-ty1"/>
+                        <outlet property="resultSplitLabel" destination="3gu-6F-M4W" id="UKR-17-7gY"/>
                         <outlet property="tipPercentageLabel" destination="2CX-7z-YM2" id="6BQ-U8-Bpg"/>
                         <outlet property="tipPercentageSlider" destination="6Oz-5W-Psa" id="fpQ-cw-PlP"/>
                     </connections>

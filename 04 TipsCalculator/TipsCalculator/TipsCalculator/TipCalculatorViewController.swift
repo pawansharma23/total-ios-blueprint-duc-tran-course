@@ -17,9 +17,11 @@ class TipCalculatorViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var numberOfPeopleLabel: UILabel!
     @IBOutlet weak var numberOfPeopleSlider: UISlider!
+    @IBOutlet weak var resultSplitLabel: UILabel!
     
     // MARK: - Properties
     var tipCalculator = TipCalculator(amountBeforeTax: 25.00, tipPercentage: 0.2)
+    var tipPerPerson = 0
     
     // MARK: - View Controller Lifecycle
     override func viewDidLoad() {
@@ -39,6 +41,8 @@ class TipCalculatorViewController: UIViewController, UITextFieldDelegate {
             tipCalculator.amountBeforeTax = 0
         }
         
+        tipCalculator.numberOfPerson = Int(numberOfPeopleSlider.value)
+        
         
         tipCalculator.calculateTip()
         updateUI()
@@ -46,6 +50,8 @@ class TipCalculatorViewController: UIViewController, UITextFieldDelegate {
     
     func updateUI() {
         resultLabel.text = String(format: "Total: $%0.2f Tip: $%0.2f", arguments: [tipCalculator.totalAmount, tipCalculator.tipAmount])
+        resultSplitLabel.text = String(format: "$%0.2f per person", arguments: [tipCalculator.amountPerPerson])
+        
     }
     
     // MARK: - UIControl Events
@@ -67,4 +73,11 @@ class TipCalculatorViewController: UIViewController, UITextFieldDelegate {
         tipPercentageLabel.text! = String(format: "Tip: %02d%%", arguments: [Int(tipPercentageSlider.value * 100)])
         calcTip()
     }
+    
+    @IBAction func splitSliderValueChanged(sender: AnyObject) {
+        numberOfPeopleLabel.text! = String(format: "Split: %d", arguments: [Int(numberOfPeopleSlider.value)])
+        calcTip()
+    }
+   
+    
 }

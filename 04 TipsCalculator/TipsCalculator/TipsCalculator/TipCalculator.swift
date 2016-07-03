@@ -14,6 +14,8 @@ class TipCalculator {
     var amountBeforeTax: Float = 0
     var tipPercentage: Float = 0
     var totalAmount: Float = 0
+    var numberOfPerson: Int = 1
+    var amountPerPerson: Float = 0
     
     init(amountBeforeTax: Float, tipPercentage: Float) {
         self.amountBeforeTax = amountBeforeTax
@@ -23,5 +25,6 @@ class TipCalculator {
     func calculateTip() {
         tipAmount = amountBeforeTax * tipPercentage
         totalAmount = amountBeforeTax + tipAmount
+        amountPerPerson = tipAmount / Float(numberOfPerson)
     }
 }
